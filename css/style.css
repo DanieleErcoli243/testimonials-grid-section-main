@@ -7,7 +7,15 @@
     font-family: "Barlow Semi Condensed", serif;
 }
 
+/* generici */
 
 body {
     background-color: hsl(210, 46%, 95%);
+}
+
+/* container */
+
+.container {
+    max-width: 330px;
+    margin: 0 auto;
 }
