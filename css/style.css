@@ -55,6 +55,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.basis-l {
+    flex-basis: 60%;
+}
+
+.basis-s {
+    flex-basis: 40px;
+
+}
+
 /* container */
 
 .container {
@@ -94,6 +103,37 @@ body {
         font-size: 24px;
     }
 
-    
+}
 
+/* media querie */
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        
+
+        .row {
+            
+            margin: 0 -20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            flex-grow: 1;
+            .col {
+                padding: 0 20px;
+                
+            
+                
+
+                
+            }
+        }
+
+        .aside {
+            flex-basis: 30%;
+            flex-shrink: 0;
+        }
+    }
 }
