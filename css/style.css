@@ -20,6 +20,34 @@ body {
     margin-bottom: 20px;
 }
 
+.opacity {
+    opacity: 50%;
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+
+.gray {
+    color: hsl(0, 0%, 81%);
+}
+
+
+.bg-violet {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.bg-gray-blue {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.bg-black-blue {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.bg-white{
+    background-color: hsl(0, 0%, 100%);
+}
 
 /* container */
 
@@ -40,12 +68,27 @@ body {
         align-items: center;
         gap: 20px;
         
-
         img {
             border-radius: 50%;
         }
+
+        
+    }
+    
+    h2 {
+        font-size: 18px;
     }
 
+    h3 {
+        font-size: 16px;
+        
+    }
+
+    
+
+    h4 {
+        font-size: 24px;
+    }
 
     
 
