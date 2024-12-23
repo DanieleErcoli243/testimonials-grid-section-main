@@ -58,11 +58,11 @@ body {
 }
 
 .basis-l {
-    flex-basis: 70%;
+    flex-basis: 60%;
 }
 
 .basis-s {
-    flex-basis: 30%;
+    flex-basis: 40%;
 
 }
 
@@ -116,13 +116,14 @@ body {
     .container {
         max-width: 1200px;
         margin: 0 auto;
-        display: flex;
-        gap: 40px;
         padding: 150px 0;
+        display: flex;
+        align-items: baseline;
+        gap: 40px;
 
         .row {
             
-            margin: -10 -20px;
+            margin: 0 -20px;
             display: flex;
             flex-wrap: wrap;
             flex-grow: 1;
@@ -133,12 +134,10 @@ body {
 
 
             }
-        }
 
-        .aside {
-            flex-basis: 30%;
-            flex-shrink: 0;
             
         }
+
+        
     }
 }
