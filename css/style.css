@@ -126,7 +126,7 @@ body {
             margin: 0 -20px;
             display: flex;
             flex-wrap: wrap;
-            flex-grow: 1;
+            flex-basis: 75%;
             
 
             .col {
@@ -136,6 +136,10 @@ body {
             }
 
             
+        }
+
+        .aside{
+            flex-basis: 25%;
         }
 
         
