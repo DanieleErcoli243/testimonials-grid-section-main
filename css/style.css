@@ -57,97 +57,141 @@ body {
     background-repeat: no-repeat;
 }
 
-.basis-l {
-    flex-basis: 65%;
-}
 
-.basis-s {
-    flex-basis: 35%;
 
-}
 
 /* container */
 
 .container {
-    max-width: 330px;
-    margin: 0 auto;
     padding: 50px 0;
-}
 
-/* card */
 
-.card {
-    margin-bottom: 30px;
-    padding: 25px 30px;
-    border-radius: 10px;
-    text-align: left;
-    figure {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+    /* col */
+
+    .col {
+        padding: 0 20px;
         
-        img {
-            border-radius: 50%;
+        /* card */
+        
+        .card {
+            margin-bottom: 30px;
+            padding: 25px 30px;
+            border-radius: 10px;
+            text-align: left;
+            figure {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+                img {
+                    border-radius: 50%;
+                }
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        
+            h3 {
+                font-size: 16px;
+                
+            }
+        
+            h4 {
+                font-size: 22px;
+            }
+        
+            p {
+                line-height: 1.5;
+                font-size: 13px;
+            }
+        
         }
     }
-    
-    h2 {
-        font-size: 18px;
-    }
-
-    h3 {
-        font-size: 16px;
-        
-    }
-
-    h4 {
-        font-size: 22px;
-    }
-
-    p {
-        line-height: 1.5;
-        font-size: 13px;
-    }
 
 }
+
 
 /* media querie */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 1190px;
+        max-width: 700px;
         margin: 0 auto;
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .col.basis-l {
+        flex-basis: 60%
+    }
+
+    .col.basis-s {
+        flex-basis: 40%;
+    }
+    
+
+    .container {
+        max-width: 900px;
         padding: 50px 0;
         display: flex;
-        align-items: baseline;
-        gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
 
-        .row {
-            
-            margin: -15px -20px;
+
+        .row{
             flex-basis: 75%;
             display: flex;
             flex-wrap: wrap;
-            
+            align-items: flex-start;
+            margin: -15px -20px;
+
 
             .col {
                 padding: 15px 20px;
                 display: flex;
-                justify-content: center;
-                .card{
+                
+                .card {
                     margin-bottom: 0;
                     
                 }
-
             }
 
+        }
+
+        .aside {
+            flex-basis: 25%;
+            .card {
+                margin-bottom: 0;
+                
+            }
             
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
     
+    .col.basis-l {
+        flex-basis: 75%;
+    }
+
+    .col.basis-s {
+        flex-basis: 25%;
+    }
+
+    .container {
+        max-width: 1190px;
+        margin: 0 auto;
+
+       
         .aside{
-                flex-basis: 25%;
-                padding: 0 25px;
-            }
+            padding: 0 25px;
+        }
         
        
 
