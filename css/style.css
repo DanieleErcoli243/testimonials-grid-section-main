@@ -156,7 +156,6 @@ body {
                 
                 .card {
                     margin-bottom: 0;
-                    
                 }
             }
 
@@ -166,7 +165,6 @@ body {
             flex-basis: 25%;
             .card {
                 margin-bottom: 0;
-                
             }
             
         }
@@ -177,11 +175,11 @@ body {
 
     
     .col.basis-l {
-        flex-basis: 75%;
+        flex-basis: 65%;
     }
 
     .col.basis-s {
-        flex-basis: 25%;
+        flex-basis: 35%;
     }
 
     .container {
