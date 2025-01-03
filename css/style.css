@@ -11,6 +11,9 @@
 
 body {
     background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 
@@ -53,7 +56,7 @@ body {
 
 .quotation {
     background-image: url(../images/bg-pattern-quotation.svg);
-    background-position: top right;
+    background-position: 85% 0%;
     background-repeat: no-repeat;
 }
 
@@ -85,20 +88,22 @@ body {
                 
                 img {
                     border-radius: 50%;
+                    max-width: 35px;
+                    
                 }
             }
             
             h2 {
-                font-size: 18px;
+                font-size: 14px;
             }
         
             h3 {
-                font-size: 16px;
+                font-size: 12px;
                 
             }
         
             h4 {
-                font-size: 22px;
+                font-size: 20px;
             }
         
             p {
